@@ -9,10 +9,10 @@ with open('utca.txt', 'r') as file:
         adoszam = sor_adatok[0]
         negyzetmeter = sor_adatok[4]
         tavolsag = sor_adatok[3]
-        tovabbi_adatok = ' '.join(sor_adatok[1:3])
+        tovabbi_adatok = ' '.join(sor_adatok[1:4])
 
         adatok[adoszam] = tovabbi_adatok
-
+        print(tovabbi_adatok[3])       
 telek_szam = len(adatok)
 print(f"{telek_szam} telek adatai találhatók az állományban.")
 
@@ -23,10 +23,10 @@ if keresett_adoszam in adatok:
 else:
     print("Nem szerepel az adattárolóban.")
 
-for i in range(tavolsag):
-
-def ado(ado):
-
-    if ado >= 10000:
+def ado(adozas, negyzetmeter):
+    befizetettado = 0
+    
+            
+    if adozas > 10000:
         ado=0
-
+    return befizetettado
